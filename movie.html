@@ -1,0 +1,75 @@
+<div class="movie-preview">
+  <span class="movie-title">TV Series</span>
+  <span class="movie-title">Movies</span>
+  <span class="movie-title">Animes</span>
+
+  <div class="movies">
+    <img
+      src="https://assets-prd.ignimgs.com/2023/03/13/johnwick4-review-blogroll-1678744821043.jpg"
+      alt=""
+      class="movie-tnail"
+    />
+
+    <div class="movie-text">
+      <h1 class="preview-name">John Wick</h1>
+      <p class="preview-category">Action, ADVENTURe</p>
+      <button class="watch">Watch</button>
+      <button class="add"><i class="fa fa-plus"></i></button>
+    </div>
+  </div>
+  <div class="best-artists" id="best-artists">
+    <div class="jc-fess">
+      <span class="movie-title">Action</span>
+      <div class="btns">
+        <a href="#!allMovie?genre=action&index=1" class="">See More</a>
+      </div>
+    </div>
+
+    <div class="artist-jc">
+      <div ng-repeat="x in action" ng-if="$index < 5" class="artist-profile">
+        <img src="{{x.image}}" alt="" class="profile-pic" />
+        <button class="add butn"><i class="fa fa-plus"></i></button>
+        <div class="artist-details">
+          <h4 class="artist-name">{{x.title}}</h4>
+          <p class="artist-moviecount">{{x.genres}}</p>
+          <p class="artist-starrating">
+            &star;&starf;&bigstar;&bigstar;&bigstar;
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="best-artists" id="continue-watching">
+    <div class="jc-fess">
+      <span class="movie-title">Continue watching</span>
+      <div class="btns">
+        <a href="#href" class="artist-btn"><i class="fa fa-caret-left"></i></a>
+        <a href="#href" class="artist-btn"><i class="fa fa-caret-right"></i></a>
+      </div>
+    </div>
+
+    <div class="artist-jc">
+      <div class="current-movies">
+        <img
+          src="https://i.ytimg.com/vi/XobPmJ5I_Ls/movieposter_en.jpg"
+          alt=""
+          class="movie-prev"
+        />
+      </div>
+      <div class="current-movies">
+        <img
+          src="https://www.gamespot.com/a/uploads/scale_medium/1562/15626911/4033496-1.jpg"
+          alt=""
+          class="movie-prev"
+        />
+      </div>
+      <div class="current-movies">
+        <img
+          src="https://lumiere-a.akamaihd.net/v1/images/p_20cs_darbyandthedead_1133_626acb6e.jpeg"
+          alt=""
+          class="movie-prev"
+        />
+      </div>
+    </div>
+  </div>
+</div>

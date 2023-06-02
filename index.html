@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./angular.min.js"></script>
+    <script src="./angular-router.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body ng-app="myModule" ng-controller="myController">
+    <div class="homepage">
+      <div class="side-one">
+        <div class="logo"><i class="fa fa-camera awe"></i> Exxmon.</div>
+        <div class="menu">
+          <ul>
+            <h1 class="menue-title">menu</h1>
+            <li>
+              <a href="#"><i class="fa fa-home awe"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-church awe"></i> Community</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-compass awe"></i> Discovery</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-stopwatch awe"></i> Coming Soon</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul>
+            <h1 class="menue-title">socials</h1>
+            <li>
+              <a href="#"><i class="fa fa-user awe"></i> friends</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-user awe"></i> parties</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-bullseye awe"></i> Media</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul>
+            <h1 class="menue-title">general</h1>
+            <li>
+              <a href="#"><i class="fa fa-wrench awe"></i> settings</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-arrow-right-from-bracket awe"></i> log out</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <ng-view></ng-view>
+
+      <div class="search">
+        <form action="POST" class="get-search">
+          <label for="search-bar"><i class="fa fa-search"></i></label>
+          <input
+            type="text"
+            class="search-bar"
+            id="search-bar"
+            placeholder="Search"
+          />
+        </form>
+        <div class="popular-movies">
+          <h3 class="popular-heading">Popular Movies</h3>
+
+          <div class="movie-info">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/How_to_Train_Your_Dragon_Homecoming_poster.jpg/220px-How_to_Train_Your_Dragon_Homecoming_poster.jpg"
+              alt=""
+              class="movie-pic"
+            />
+
+            <div class="movie-texss">
+              <h4 class="movie-title">Hidden World</h4>
+              <p class="movie-category">Adventure</p>
+              <p class="movie-rating">&star; &starf; &bigstar; 7.4</p>
+            </div>
+          </div>
+          <div class="movie-info">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/How_to_Train_Your_Dragon_Homecoming_poster.jpg/220px-How_to_Train_Your_Dragon_Homecoming_poster.jpg"
+              alt=""
+              class="movie-pic"
+            />
+
+            <div class="movie-texss">
+              <h4 class="movie-title">Hidden World</h4>
+              <p class="movie-category">Adventure</p>
+              <p class="movie-rating">&star; &starf; &bigstar; 7.4</p>
+            </div>
+          </div>
+          <div class="movie-info">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/How_to_Train_Your_Dragon_Homecoming_poster.jpg/220px-How_to_Train_Your_Dragon_Homecoming_poster.jpg"
+              alt=""
+              class="movie-pic"
+            />
+
+            <div class="movie-texss">
+              <h4 class="movie-title">Hidden World</h4>
+              <p class="movie-category">Adventure</p>
+              <p class="movie-rating">&star; &starf; &bigstar; 7.4</p>
+            </div>
+          </div>
+          <button class="see-more">See More</button>
+        </div>
+        <div class="popular-movies">
+          <h3 class="popular-heading">Favorites</h3>
+
+          <div class="movie-info">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/How_to_Train_Your_Dragon_Homecoming_poster.jpg/220px-How_to_Train_Your_Dragon_Homecoming_poster.jpg"
+              alt=""
+              class="movie-pic"
+            />
+
+            <div class="movie-texss">
+              <h4 class="movie-title">Hidden World</h4>
+              <p class="movie-category">Adventure</p>
+              <p class="movie-rating">&star; &starf; &bigstar; 7.4</p>
+            </div>
+          </div>
+          <div class="movie-info">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/How_to_Train_Your_Dragon_Homecoming_poster.jpg/220px-How_to_Train_Your_Dragon_Homecoming_poster.jpg"
+              alt=""
+              class="movie-pic"
+            />
+
+            <div class="movie-texss">
+              <h4 class="movie-title">Hidden World</h4>
+              <p class="movie-category">Adventure</p>
+              <p class="movie-rating">&star; &starf; &bigstar; 7.4</p>
+            </div>
+          </div>
+          <div class="movie-info">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/How_to_Train_Your_Dragon_Homecoming_poster.jpg/220px-How_to_Train_Your_Dragon_Homecoming_poster.jpg"
+              alt=""
+              class="movie-pic"
+            />
+
+            <div class="movie-texss">
+              <h4 class="movie-title">Hidden World</h4>
+              <p class="movie-category">Adventure</p>
+              <p class="movie-rating">&star; &starf; &bigstar; 7.4</p>
+            </div>
+          </div>
+          <button class="see-more">See More</button>
+        </div>
+      </div>
+    </div>
+    <script src="all.js"></script>
+  </body>
+</html>

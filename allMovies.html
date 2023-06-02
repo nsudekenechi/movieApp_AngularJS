@@ -1,0 +1,28 @@
+<div class="movie-preview">
+  <div class="best-artists" id="best-artists">
+    <div class="jc-fess">
+      <span class="movie-title">Action</span>
+    </div>
+
+    <div class="artist-jc">
+      <div ng-repeat="x in action" class="artist-profile">
+        <img src="{{x.image}}" alt="" class="profile-pic" />
+        <button class="add butn"><i class="fa fa-plus"></i></button>
+        <div class="artist-details">
+          <h4 class="artist-name">{{x.title}}</h4>
+          <p class="artist-moviecount">{{x.genres}}</p>
+          <p class="artist-starrating">
+            &star;&starf;&bigstar;&bigstar;&bigstar;
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a
+    ng-repeat="x in pages"
+    style="border: solid black; border-radius: 50%; margin-right: 10px"
+    href="#!allMovie?genre=action&index={{x}}"
+    >{{x}}</a
+  >
+</div>

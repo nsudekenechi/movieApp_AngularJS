@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    "Trebuchet MS", sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+  scroll-snap-type: proximity;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.homepage {
+  display: flex;
+  justify-content: safe;
+}
+.logo {
+  margin: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.side-one {
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+.menu {
+  margin: 1rem;
+}
+.menu > ul > li {
+  list-style: none;
+  margin: 2rem;
+  color: black;
+  filter: grayscale(100%);
+  opacity: 40%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.awe {
+  color: red;
+}
+.menu > ul > li:hover {
+  opacity: 100%;
+  filter: grayscale(0%);
+  font-weight: 500;
+  text-shadow: rgba(255, 255, 255, 0.8) 5px 4px 1px;
+}
+.menue-title {
+  font-size: 0.8rem;
+  margin: 2.5rem 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(182, 182, 196);
+}
+.movie-preview {
+  margin: 2rem 3rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+.movies {
+  position: relative;
+}
+.movie-text {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: #fff;
+}
+.preview-name {
+  text-transform: uppercase;
+}
+.preview-category {
+  margin: 0.5rem;
+  text-transform: uppercase;
+}
+.watch {
+  margin: 0.5rem;
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  width: 7vw;
+  font-size: 1rem;
+  border-radius: 7px;
+}
+.add {
+  margin: 0.5rem;
+  margin-left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 0.6rem;
+  border-radius: 7px;
+}
+.add:hover {
+  background-color: rgba(234, 37, 37, 0.5);
+}
+.movie-title {
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+  /* margin-bottom: 2rem; */
+  color: rgb(182, 182, 196);
+}
+.movie-title:hover {
+  color: #000;
+}
+.movie-tnail {
+  margin-top: 0.8rem;
+  width: 55vw;
+  height: 43vh;
+  border-radius: 40px;
+  object-fit: cover;
+}
+.jc-fess {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.artist-profile {
+  margin-top: 1rem;
+  margin-right: 2.3rem;
+  position: relative;
+}
+.butn {
+  position: absolute;
+  right: 5%;
+  top: 4%;
+}
+.artist-details {
+  /* position: absolute; */
+  color: #000;
+  bottom: 10%;
+  /* left: 30%; */
+  /* text-align: center; */
+}
+.artist-moviecount {
+  /* color: rgba(255, 255, 255, 0.7); */
+  margin: 0.1rem;
+}
+.artist-starrating {
+  color: yellow;
+  font-size: 0.7rem;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+}
+.artist-btn {
+  display: block;
+  color: #000;
+  /* width: 5vw;
+    height: 3vh; */
+  border: 0.5px #000 solid;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  padding: 0.1rem 0.7rem;
+  border-radius: 50%;
+}
+.artist-btn:hover {
+  color: red;
+  font-weight: 700;
+}
+.profile-pic {
+  position: relative;
+  object-fit: cover;
+  width: 12vw;
+  height: 28vh;
+  border-radius: 30px;
+}
+.artist-jc {
+  display: flex;
+  justify-content: safe;
+}
+.current-movies {
+  margin-top: 1rem;
+  margin-right: 3.5rem;
+}
+.movie-prev {
+  position: relative;
+  object-fit: cover;
+  width: 15vw;
+  height: 30vh;
+  border-radius: 30px;
+}
+.popular-movies {
+  margin-bottom: 1rem;
+}
+.popular-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: rgb(81, 80, 99);
+}
+.get-search {
+  margin: 1.5rem;
+  margin-left: 0;
+  margin-bottom: 1.2rem;
+  border: 0.5px #000 solid;
+  padding: 0.4rem;
+  padding-right: 0;
+  border-radius: 20px;
+}
+.search-bar {
+  border: none;
+}
+.movie-info {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 0.7rem;
+}
+.movie-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(82, 81, 100);
+}
+.movie-category {
+  font-size: 0.85rem;
+  color: rgb(182, 182, 196);
+}
+.movie-pic {
+  width: 4vw;
+  /* height: 9vh; */
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+.movie-rating {
+  margin-top: 1.4rem;
+  color: rgb(182, 182, 196);
+}
+.see-more {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  width: 12vw;
+  font-size: 1rem;
+  border-radius: 7px;
+}
